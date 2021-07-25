@@ -50,53 +50,53 @@ $user         = App\Models\User::count();
       </div>
 
       <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>{{$staff}}</h3>
+        <!-- small box -->
+        <div class="small-box bg-info">
+          <div class="inner">
+            <h3>{{$staff}}</h3>
 
-                <p>Staff</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-document-text"></i>
-              </div>
-              <a href="/admin/staff" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-
+            <p>Staff</p>
           </div>
-
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>{{$layanan}}</h3>
-
-                <p>Layanan</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-document-text"></i>
-              </div>
-              <a href="/admin/layanan" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-
+          <div class="icon">
+            <i class="ion ion-document-text"></i>
           </div>
+          <a href="/admin/staff" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
 
-          <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-                <h3>{{$portofolio}}</h3>
+      </div>
 
-                <p>Portofolio</p>
-              </div>
-              <div class="icon">
-                <i class="ion ion-document-text"></i>
-              </div>
-              <a href="/admin/portofolio" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+          <div class="inner">
+            <h3>{{$layanan}}</h3>
 
+            <p>Layanan</p>
           </div>
-          
+          <div class="icon">
+            <i class="ion ion-document-text"></i>
+          </div>
+          <a href="/admin/layanan" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+
+      </div>
+
+      <div class="col-lg-3 col-6">
+        <!-- small box -->
+        <div class="small-box bg-info">
+          <div class="inner">
+            <h3>{{$portofolio}}</h3>
+
+            <p>Portofolio</p>
+          </div>
+          <div class="icon">
+            <i class="ion ion-document-text"></i>
+          </div>
+          <a href="/admin/portofolio" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
+        </div>
+
+      </div>
+      
       <!-- ./col -->
       <div class="col-lg-3 col-6">
         <!-- small box -->
@@ -142,7 +142,7 @@ $user         = App\Models\User::count();
           <a href="/admin/list-user" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
-    
+      
       <!-- ./col -->
     </div>
     <!-- /.row -->

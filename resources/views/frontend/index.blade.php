@@ -106,7 +106,7 @@
             <div class="service-item">
               <h3>{{$item->nama_layanan}}</h3>
               <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
-              <a href="">Selengkapnya...</a>
+              <a href="/lihat-layanan/{{$item->id}}/{{Str::kebab($item->nama_layanan)}}">Selengkapnya...</a>
             </div>
             @endforeach
           </div>
@@ -129,6 +129,7 @@
 
           @foreach($portofolio as $item)
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+              <a href="/lihat-portofolio/{{$item->id}}/{{Str::kebab($item->judul)}}">  
             <figure>
               <img src="{{asset('/gambar_portofolio/'.$item->gambar)}}" class="img-responsive">
               <figcaption>
@@ -136,6 +137,7 @@
                 <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
               </figcaption>
             </figure>
+              </a>
           </div>
           @endforeach
           
@@ -178,7 +180,7 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="blog-sec">
               <div class="blog-img">
-                <a href="">
+                <a href="/lihat-berita/{{$item->id}}/{{Str::kebab($item->judul_berita)}}">
                   <img src="{{asset('/gambar_berita/'.$item->gambar)}}" class="img-responsive">
                 </a>
               </div>

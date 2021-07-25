@@ -24,6 +24,13 @@ use App\Http\Controllers\FrontendController;
 
 Route::get('/', [FrontendController::class, 'index']);
 
+//Route lihat layanan
+Route::get('/lihat-layanan/{layanan}/{layanan2}', [FrontendController::class, 'lihatLayanan']);
+//Route lihat portofolio
+Route::get('/lihat-portofolio/{portofolio}/{portofolio2}', [FrontendController::class, 'lihatPortofolio']);
+//Route lihat berita
+Route::get('/lihat-berita/{berita}/{berita2}', [FrontendController::class, 'lihatBerita']);
+
 Route::post('/kirim-pesan', [PesanController::class, 'kirimPesan']);
 
 
