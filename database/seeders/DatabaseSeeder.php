@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Profil;
+use App\Models\User;
 use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
@@ -24,5 +25,12 @@ class DatabaseSeeder extends Seeder
                 'facebook' => 'https://www.instagram.com/dwimitrapt/',
                 'instagram' => 'https://www.instagram.com/dwimitrapt/',
             ]);
+
+        DB::table('users')->insert(
+        [
+            'name' => 'Adminnistrator',
+            'email' => 'admin@admin.com',
+            'password' => bcrypt('password'),
+        ]);
     }
 }
