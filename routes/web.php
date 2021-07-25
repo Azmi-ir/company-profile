@@ -39,8 +39,8 @@ Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/postlogin', [AuthController::class, 'postlogin']);
 
 //Route Halaman Khusus Admin
-Route::group(['middleware' => ['auth']], function(){
-    
+Route::group(['middleware' => ['auth']], function () {
+
     Route::get('/admin/dashboard', function () {
         return view('admin.dashboard.dashboard');
     });
@@ -83,5 +83,4 @@ Route::group(['middleware' => ['auth']], function(){
 
     //Route CKEDITOR
     Route::post('/admin/layanan/create', [layananController::class, 'ckeditor'])->name('ckeditor.image-upload');
-
 });
