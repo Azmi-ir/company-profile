@@ -42,6 +42,7 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
 
         <!-- Messages Dropdown Menu -->
         <!-- Messages Dropdown Menu -->
+          <!--
         <li class="nav-item dropdown">
           <a class="nav-link" data-toggle="dropdown" href="#">
             <i class="far fa-comments"></i>
@@ -49,10 +50,13 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
             <span class="badge badge-danger navbar-badge">{{$total_pesan}}</span>
             @endif
           </a>
+          
+
+
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
             @forelse($pesan_masuk as $item)
             <a href="/lihat-pesan/{{$item->id}}" class="dropdown-item">
-              <!-- Message Start -->
+              
               <div class="media">
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
@@ -62,12 +66,12 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
                   <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i>{{$item->created_at->diffForHumans()}}</p>
                 </div>
               </div>
-              <!-- Message End -->
+              
             </a>
             <div class="dropdown-divider"></div>
             @empty
             <a href="" class="dropdown-item">
-              <!-- Message Start -->
+              
               <div class="media">
                 <div class="media-body">
                   <h3 class="dropdown-item-title">
@@ -75,12 +79,13 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
                   </h3>
                 </div>
               </div>
-              <!-- Message End -->
+              
             </a>
             @endforelse
             <a href="/pesan-masuk" class="dropdown-item dropdown-footer">Lihat Semua pesan</a>
           </div>
         </li>
+        -->
         <li class="nav-item">
           <a class="nav-link" data-widget="fullscreen" href="#" role="button">
             <i class="fas fa-expand-arrows-alt"></i>
@@ -191,6 +196,8 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
             </a>
           </li>
 
+
+          <!--
           <li class="nav-item">
             <a href="/admin/pesan-masuk" class="nav-link">
               <i class="nav-icon fas fa-envelope"></i>
@@ -203,6 +210,7 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
               </p>
             </a>
           </li>
+          -->
 
           <li class="nav-item">
             <a href="/admin/user/{{Auth()->user()->id}}/edit" class="nav-link">

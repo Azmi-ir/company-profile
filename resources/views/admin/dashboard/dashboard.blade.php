@@ -96,7 +96,7 @@ $user         = App\Models\User::count();
             </div>
 
           </div>
-
+          
       <!-- ./col -->
       <div class="col-lg-3 col-6">
         <!-- small box -->
@@ -125,21 +125,6 @@ $user         = App\Models\User::count();
             <i class="ion ion-stats-bars"></i>
           </div>
           <a href="/admin/testimoni" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-6">
-        <!-- small box -->
-        <div class="small-box bg-success">
-          <div class="inner">
-            <h3>{{$pesan}}</h3>
-
-            <p>Pesan Masuk</p>
-          </div>
-          <div class="icon">
-            <i class="ion ion-stats-bars"></i>
-          </div>
-          <a href="/admin/pesan-masuk" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
       </div>
 
