@@ -58,7 +58,7 @@ $user         = App\Models\User::count();
             <p>Staff</p>
           </div>
           <div class="icon">
-            <i class="ion ion-document-text"></i>
+            <i class="ion ion-person"></i>
           </div>
           <a href="/admin/staff" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
@@ -74,7 +74,7 @@ $user         = App\Models\User::count();
             <p>Layanan</p>
           </div>
           <div class="icon">
-            <i class="ion ion-document-text"></i>
+            <i class="ion ion-ios-paper"></i>
           </div>
           <a href="/admin/layanan" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
@@ -90,7 +90,7 @@ $user         = App\Models\User::count();
             <p>Portofolio</p>
           </div>
           <div class="icon">
-            <i class="ion ion-document-text"></i>
+            <i class="ion ion-images"></i>
           </div>
           <a href="/admin/portofolio" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
@@ -107,7 +107,7 @@ $user         = App\Models\User::count();
             <p>Berita</p>
           </div>
           <div class="icon">
-            <i class="ion ion-stats-bars"></i>
+            <i class="ion ion-speakerphone"></i>
           </div>
           <a href="/admin/berita" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>
@@ -122,7 +122,7 @@ $user         = App\Models\User::count();
             <p>Testimoni</p>
           </div>
           <div class="icon">
-            <i class="ion ion-stats-bars"></i>
+            <i class="ion ion-chatbubbles"></i>
           </div>
           <a href="/admin/testimoni" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
         </div>
@@ -137,7 +137,7 @@ $user         = App\Models\User::count();
             <p>User Terdaftar</p>
           </div>
           <div class="icon">
-            <i class="ion ion-stats-bars"></i>
+            <i class="ion ion-person"></i>
           </div>
           <a href="/admin/list-user" class="small-box-footer">Lebih Lengkap <i class="fas fa-arrow-circle-right"></i></a>
         </div>

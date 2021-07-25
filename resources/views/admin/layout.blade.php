@@ -24,6 +24,8 @@ $pesan_masuk = App\Models\Pesan::where('status', '0')->orderBy('created_at', 'de
   <link rel="stylesheet" href="{{ asset ('template/plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{ asset ('template/dist/css/adminlte.min.css')}}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
