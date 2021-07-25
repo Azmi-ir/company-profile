@@ -47,7 +47,6 @@ class StaffController extends Controller
         $staff->nama= $request->input('nama');
         $staff->jabatan = $request->input('jabatan');
         $staff->status = $request->input('status');
-        $staff->deskripsi  = $request->input('deskripsi');
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $extension = $file->getClientOriginalExtension();
@@ -101,7 +100,6 @@ class StaffController extends Controller
         $staff->nama= $request->input('nama');
         $staff->jabatan = $request->input('jabatan');
         $staff->status = $request->input('status');
-        $staff->deskripsi  = $request->input('deskripsi');
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
             $extension = $file->getClientOriginalExtension();

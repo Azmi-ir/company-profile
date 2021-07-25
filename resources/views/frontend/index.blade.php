@@ -101,15 +101,15 @@
             <p class="sub-title pad-bt15">kami menyediakan jasa di bidang pembangunan konstruksi jalan rigid, hotmix, konstruksi pembangunan gedung, real estate, properti dan perlengkapan eksternal bangunan lainnya.</p>
             <hr class="bottom-line">
           </div>
+          @foreach($layanan as $item)
           <div class="col-md-3 col-sm-6 col-xs-12">
-            @foreach($layanan as $item)
             <div class="service-item">
               <h3>{{$item->nama_layanan}}</h3>
               <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
               <a href="/lihat-layanan/{{$item->id}}/{{Str::kebab($item->nama_layanan)}}">Selengkapnya...</a>
             </div>
-            @endforeach
           </div>
+            @endforeach
        
         </div>
       </div>
@@ -131,7 +131,7 @@
           <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
               <a href="/lihat-portofolio/{{$item->id}}/{{Str::kebab($item->judul)}}">  
             <figure>
-              <img src="{{asset('/gambar_portofolio/'.$item->gambar)}}" class="img-responsive">
+              <img src="{{asset('/gambar_portofolio/'.$item->gambar)}}" class="img-responsive" >
               <figcaption>
                 <h2>{{$item->judul}}</h2>
                 <p>{!! Str::limit($item->deskripsi, 100) !!}</p>

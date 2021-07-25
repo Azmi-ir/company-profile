@@ -85,17 +85,6 @@
                   </td>
                 </div>
               </tr>
-
-              <tr>
-                <div class="form-group">
-                  <td>    
-                    <label for="isi_berita">Deskripsi</label>
-                  </td>
-                  <td>    
-                    <textarea class="form-control  col-md-12" name="deskripsi" id="" rows="4" placeholder="Masukan Deskripsi"></textarea>
-                  </td>
-                </div>
-              </tr>
             </table>
 
             <br>
