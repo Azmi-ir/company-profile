@@ -13,3 +13,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/public/foto_staff
+/public/gambar_berita
+/public/gambar_portofolio
+/public/gambar_testimoni
