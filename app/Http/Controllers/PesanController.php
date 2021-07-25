@@ -22,7 +22,7 @@ class PesanController extends Controller
          ]);
         Pesan::create($request->all());
 
-        return redirect()->back();
+        return redirect('/');
     }
 
     public function index()

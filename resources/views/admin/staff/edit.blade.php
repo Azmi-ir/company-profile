@@ -90,51 +90,41 @@
                   </div>
                 </tr>
 
-               <tr>
-                <div class="form-group">
-                 <td>
+                <tr>
+                  <div class="form-group">
+                   <td>
 
-                  <label for="thumbnail">Upload Foto</label>
-                </td>
-                <td>       
-                  <input type="file" class="form-control @error('foto') is invalid @enderror btn-sm" id="foto" name="foto" value="{{ $staff->foto }}">
-                  @error('foto')
-                  <div class="invalid-feedback">
-                    {{$message}}
-                  </div>
-                  @enderror
-                  <small><p>Thumbnail : <a href="{{asset('/foto_staff/'.$staff->foto)}}" target="_blank">{{$staff->foto}}</a></p></small>
-                </td>
-              </div>
-            </tr>
+                    <label for="thumbnail">Upload Foto</label>
+                  </td>
+                  <td>       
+                    <input type="file" class="form-control @error('foto') is invalid @enderror btn-sm" id="foto" name="foto" value="{{ $staff->foto }}">
+                    @error('foto')
+                    <div class="invalid-feedback">
+                      {{$message}}
+                    </div>
+                    @enderror
+                    <small><p>Thumbnail : <a href="{{asset('/foto_staff/'.$staff->foto)}}" target="_blank">{{$staff->foto}}</a></p></small>
+                  </td>
+                </div>
+              </tr>
 
-            <tr>
-              <div class="form-group">
-                <td>
-                  <label for="isi_berita">Deskripsi</label>
-                </td>
-                <td>
-                  <textarea class="form-control tinymce-editor col-md-12" name="deskripsi"  rows="4" placeholder="Masukan Deskripsi">{{$staff->deskripsi}}</textarea>
-                </td>
-              </div>
-            </tr>
-          </table>
-          <br>
-          <div class="mb-2">
-            <button type="submit" class="btn btn-info">Simpan Data</button>
-            <a href="/admin/staff" class="btn btn-success ml-1">Kembali</a><br>
-          </div>
+            </table>
+            <br>
+            <div class="mb-2">
+              <button type="submit" class="btn btn-info">Simpan Data</button>
+              <a href="/admin/staff" class="btn btn-success ml-1">Kembali</a><br>
+            </div>
 
-        </form>
+          </form>
 
+        </div>
+        <!-- /.card-body -->
       </div>
-      <!-- /.card-body -->
+      <!-- /.card -->
     </div>
-    <!-- /.card -->
+    <!-- /.col -->
   </div>
-  <!-- /.col -->
-</div>
-<!-- /.row -->
+  <!-- /.row -->
 </div>
 <!-- /.container-fluid -->
 </section>

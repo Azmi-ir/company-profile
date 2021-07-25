@@ -8,14 +8,14 @@
     <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
     <meta name="keywords"
         content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    <link rel="shortcut icon" href="{{asset('/frontend/img/logo.png')}}">
+    <link rel="shortcut icon" href="{{('/frontend/img/logo.png')}}">
     <link rel="stylesheet" type="text/css"
         href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
-    <link rel="stylesheet" type="text/css" href="{{asset('/frontend/css/jquery.bxslider.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/frontend/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/frontend/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/frontend/css/animate.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('/frontend/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/jquery.bxslider.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/style.css')}}">
     <!-- =======================================================
     Theme Name: Baker
     Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
@@ -301,13 +301,13 @@
         </footer>
         <!---->
     </div>
-    <script src="{{asset('/frontend/js/jquery.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.easing.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/frontend/js/wow.js')}}"></script>
-    <script src="{{asset('/frontend/js/jquery.bxslider.min.js')}}"></script>
-    <script src="{{asset('frontend/js/custom.js')}}"></script>
-    <script src="{{asset('/frontend/contactform/contactform.js')}}"></script>
+    <script src="{{('/frontend/js/jquery.min.js')}}"></script>
+    <script src="{{('/frontend/js/jquery.easing.min.js')}}"></script>
+    <script src="{{('/frontend/js/bootstrap.min.js')}}"></script>
+    <script src="{{('/frontend/js/wow.js')}}"></script>
+    <script src="{{('/frontend/js/jquery.bxslider.min.js')}}"></script>
+    <script src="{{('frontend/js/custom.js')}}"></script>
+    <script src="{{('/frontend/contactform/contactform.js')}}"></script>
 
 </body>
 
