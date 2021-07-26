@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{{('/frontend/css/font-awesome.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{('/frontend/css/bootstrap.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{('/frontend/css/animate.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{('/frontend/css/style-content.css')}}">
     <!-- =======================================================
     Theme Name: Baker
     Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
@@ -41,17 +41,13 @@
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                 </button>
-                                <a class="navbar-brand" href="#"> <span class="logo-dec">DWIMITRA TUNGGAL
+                                <a class="navbar-brand" href="/"> <span class="logo-dec">DWIMITRA TUNGGAL
                                         ABADI</span></a>
                             </div>
                             <div class="collapse navbar-collapse" id="myNavbar">
                                 <ul class="nav navbar-nav navbar-right">
-                                    <li class="active"><a href="#main-header">Beranda</a></li>
-                                    <li class=""><a href="#feature">Staff</a></li>
-                                    <li class=""><a href="#service">Layanan</a></li>
-                                    <li class=""><a href="#portfolio">Portfolio</a></li>
-                                    <li class=""><a href="#testimonial">Testimoni</a></li>
-                                    <li class=""><a href="#blog">Berita</a></li>
+                                    <li class=""><a href="/">Beranda</a></li>
+                                    <li class="active"><a href="#content">@yield('title')</a></li>
                                     <li class=""><a href="#contact">Kontak</a></li>
                                 </ul>
                             </div>
@@ -63,16 +59,10 @@
                         <div class="row">
                             <div class="banner-info text-center wow fadeIn delay-05s">
                                 <img src="{{asset('/frontend/img/logo.png')}}" class="bnr-sub-title"
-                                    style="width: 200px;">
-                                <h2 class="bnr-sub-title">DWIMITRA TUNGGAL ABADI</h2>
-                                <p class="bnr-para">PT. Dwimitra Tunggal Abadi adalah Perusahaan Swasta Nasional
-                                    bergerak di bidang jasa konstruksi yang berkedudukan di Kota Tangerang Selatan,
-                                    <br>PT. Dwimitra Tunggal Abadi berpengalaman dalam bidang pembangunan konstruksi
-                                    jalan rigid, hotmix, konstruksi pembangunan gedung, real estate, properti dan
-                                    perlengkapan eksternal bangunan lainnya..</p>
-
+                                    style="width: 100px;">
+                                <h3 class="bnr-sub-title">@yield('title') DWIMITRA TUNGGAL ABADI</h3>
                                 <div class="overlay-detail">
-                                    <a href="#feature"><i class="fa fa-angle-down"></i></a>
+                                    <a href="#content"><i class="fa fa-angle-down"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -82,139 +72,12 @@
         </div>
         <!--/ HEADER-->
         <!---->
-        <section id="feature" class="section-padding wow fadeIn delay-05s">
+        <section id="content" class="section-padding wow fadeInUp delay-05s">
             <div class="container">
-                <div class="col-md-12 text-center">
-                    <h2 class="service-title pad-bt15">Staff</h2>
-                    <hr class="bottom-line">
-                </div>
-                <div class="row">
-                    @foreach($staff as $item)
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="wrap-item text-center staf">
-                            <div class="item-img text-center">
-                                <img src="{{('/foto_staff/'.$item->foto)}}" class="img-responsive staf__img">
-                            </div>
-                            <h3 class="pad-bt15">{{$item->nama}}</h3>
-                            <h5 class="pad-bt15"><strong>{{$item->jabatan}}</strong></h5>
-                            <p>{{$item->deskripsi}}</p>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
+                @yield('content')
             </div>
         </section>
         <!---->
-        <!---->
-        <section id="service" class="section-padding wow fadeInUp delay-05s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="service-title pad-bt15">Layanan</h2>
-                        <p class="sub-title pad-bt15">kami menyediakan jasa di bidang pembangunan konstruksi jalan
-                            rigid, hotmix, konstruksi pembangunan gedung, real estate, properti dan perlengkapan
-                            eksternal bangunan lainnya.</p>
-                        <hr class="bottom-line">
-                    </div>
-                    @foreach($layanan as $item)
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="service-item">
-                            <h3>{{$item->nama_layanan}}</h3>
-                            <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
-                            <a
-                                href="/lihat-layanan/{{$item->id}}/{{Str::kebab($item->nama_layanan)}}">Selengkapnya...</a>
-                        </div>
-                    </div>
-                    @endforeach
-
-                </div>
-            </div>
-        </section>
-        <!---->
-        <!---->
-        <!---->
-        <!---->
-        <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="service-title pad-bt15">Portofolio</h2>
-                        <p class="sub-title pad-bt15">Berikut adalah portofolio proyek yang sudah kami kerjakan</p>
-                        <hr class="bottom-line">
-                    </div>
-
-                    @foreach($portofolio as $item)
-                    <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-                        <a href="/lihat-portofolio/{{$item->id}}/{{Str::kebab($item->judul)}}">
-                            <figure>
-                                <img src="{{asset('/gambar_portofolio/'.$item->gambar)}}" class="img-responsive">
-                                <figcaption>
-                                    <h2>{{$item->judul}}</h2>
-                                    <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                    @endforeach
-
-                </div>
-        </section>
-        <!---->
-        <!---->
-        <section id="testimonial" class="wow fadeInUp delay-05s">
-            <div class="bg-testicolor">
-                <div class="container section-padding">
-                    <div class="row">
-                        <div class="testimonial-item">
-                            <ul class="bxslider">
-                                @foreach($testimoni as $item)
-                                <li>
-                                    <blockquote>
-                                        <img src="{{asset('/gambar_testimoni/'.$item->gambar)}}" class="img-responsive">
-                                        <p>{{$item->testimoni}}.</p>
-                                    </blockquote>
-                                    <small>{{$item->nama}}, {{$item->keterangan}}</small>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!---->
-        <section id="blog" class="section-padding wow fadeInUp delay-05s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2 class="service-title pad-bt15">Berita Terbaru</h2>
-                        <p class="sub-title pad-bt15">Berikut merupakan berita terbaru dari perusahaan kami.</p>
-                        <hr class="bottom-line">
-                    </div>
-
-                    @foreach($berita as $item)
-                    <div class="col-md-4 col-sm-6 col-xs-12 mx">
-                        <div class="blog-sec">
-                            <div class="blog-img">
-                                <a href="/lihat-berita/{{$item->id}}/{{Str::kebab($item->judul_berita)}}">
-                                    <img src="{{asset('/gambar_berita/'.$item->gambar)}}" class="img-responsive">
-                                </a>
-                            </div>
-                            <div class="blog-info">
-                                <h2>{{$item->judul_berita}}</h2>
-                                <div class="blog-comment">
-                                    <p><i class="fa fa-calendar"></i> {{$item->created_at->format('d m Y')}}</p>
-                                    <p>
-                                        <span><a href="#"><i class="fa fa-eye"></i></a> {{$item->views}}</span></p>
-                                </div>
-                                <a href="" class="read-more">Selengkapnya →</a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </section>
         <!---->
         <section id="contact" class="section-padding wow fadeInUp delay-05s">
             <div class="container">
@@ -288,12 +151,6 @@
                 <div class="row text-center">
                     <p>&copy; Baker Theme. All Rights Reserved.</p>
                     <div class="credits">
-                        <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
-            -->
                         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
                     </div>
                 </div>
