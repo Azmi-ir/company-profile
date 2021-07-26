@@ -12,7 +12,7 @@ use App\Models\Staff;
 
 class FrontendController extends Controller
 {
-    public function index() 
+    public function index()
     {
         $profil     = Profil::first();
         $layanan    = Layanan::where('status', '1')->orderBy('created_at', 'desc')->get();
@@ -29,12 +29,9 @@ class FrontendController extends Controller
         $layanan2 = Layanan::find($nama_layanan);
         $profil   = Profil::first();
 
-        if ($layanan->status == '1')
-        {
+        if ($layanan->status == '1') {
             return redirect()->back();
-        }
-        else
-        {   
+        } else {
             return view("", compact('layanan', 'layanan2', 'profil'));
         }
     }
@@ -45,12 +42,9 @@ class FrontendController extends Controller
         $portofolio2  = Portofolio::find($judul);
         $profil       = Profil::first();
 
-        if ($portofolio->status == '1')
-        {
+        if ($portofolio->status == '1') {
             return redirect()->back();
-        }
-        else
-        {   
+        } else {
             return view("", compact('portofolio', 'portofolio2', 'profil'));
         }
     }
