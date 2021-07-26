@@ -207,7 +207,7 @@
                                     <p>
                                         <span><a href="#"><i class="fa fa-eye"></i></a> {{$item->views}}</span></p>
                                 </div>
-                                <a href="" class="read-more">Selengkapnya →</a>
+                                <a href="/lihat-berita/{{$item->id}}/{{$item->judul_berita  }}" class="read-more">Selengkapnya →</a>
                             </div>
                         </div>
                     </div>
