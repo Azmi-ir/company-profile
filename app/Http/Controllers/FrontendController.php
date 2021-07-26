@@ -28,11 +28,12 @@ class FrontendController extends Controller
         $layanan  = Layanan::find($id);
         $layanan2 = Layanan::find($nama_layanan);
         $profil   = Profil::first();
+        $listLayanan    = Layanan::where('status', '1')->orderBy('created_at', 'desc')->limit(4)->get();
 
         if ($layanan->status == '1') {
-            return redirect()->back();
+            return view("frontend.layanan", compact('layanan', 'layanan2', 'profil', 'listLayanan'));
         } else {
-            return view("", compact('layanan', 'layanan2', 'profil'));
+            return redirect()->back();
         }
     }
 
@@ -41,11 +42,12 @@ class FrontendController extends Controller
         $portofolio   = Portofolio::find($id);
         $portofolio2  = Portofolio::find($judul);
         $profil       = Profil::first();
+        $lsitPortofolio = Portofolio::where('status', '1')->inRandomOrder()->limit(4)->get();
 
         if ($portofolio->status == '1') {
-            return redirect()->back();
+            return view("frontend.portofolio", compact('portofolio', 'portofolio2', 'profil', 'lsitPortofolio'));
         } else {
-            return view("", compact('portofolio', 'portofolio2', 'profil'));
+            return redirect()->back();
         }
     }
 
@@ -54,7 +56,8 @@ class FrontendController extends Controller
         $berita   = Berita::find($id);
         $berita2  = Berita::find($judul_berita);
         $profil   = Profil::first();
+        $listBerita     = Berita::orderBy('created_at', 'desc')->limit(4)->get();
 
-        return view("", compact('berita', 'berita2', 'profil'));
+        return view("frontend.berita", compact('berita', 'berita2', 'profil', 'listBerita'));
     }
 }
