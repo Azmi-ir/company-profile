@@ -122,7 +122,7 @@
                             <h3>{{$item->nama_layanan}}</h3>
                             <p>{!! Str::limit($item->deskripsi, 100) !!}</p>
                             <a
-                                href="/lihat-layanan/{{$item->id}}/{{Str::kebab($item->nama_layanan)}}">Selengkapnya...</a>
+                                href="/lihat-layanan/{{$item->id}}">Selengkapnya...</a>
                         </div>
                     </div>
                     @endforeach
@@ -145,7 +145,7 @@
 
                     @foreach($portofolio as $item)
                     <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
-                        <a href="/lihat-portofolio/{{$item->id}}/{{Str::kebab($item->judul)}}">
+                        <a href="/lihat-portofolio/{{$item->id}}">
                             <figure>
                                 <img src="{{asset('/gambar_portofolio/'.$item->gambar)}}" class="img-responsive">
                                 <figcaption>
@@ -196,7 +196,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12 mx">
                         <div class="blog-sec">
                             <div class="blog-img">
-                                <a href="/lihat-berita/{{$item->id}}/{{Str::kebab($item->judul_berita)}}">
+                                <a href="/lihat-berita/{{$item->id}}">
                                     <img src="{{asset('/gambar_berita/'.$item->gambar)}}" class="img-responsive">
                                 </a>
                             </div>
@@ -207,7 +207,7 @@
                                     <p>
                                         <span><a href="#"><i class="fa fa-eye"></i></a> {{$item->views}}</span></p>
                                 </div>
-                                <a href="/lihat-berita/{{$item->id}}/{{$item->judul_berita  }}" class="read-more">Selengkapnya →</a>
+                                <a href="/lihat-berita/{{$item->id}}" class="read-more">Selengkapnya →</a>
                             </div>
                         </div>
                     </div>
