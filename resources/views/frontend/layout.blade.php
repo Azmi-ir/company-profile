@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=PT%20dwimitra%20tunggal%20abadi&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}</style><a href="https://www.embedgooglemap.net">html embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></div>
+                        <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=PT%20dwimitra%20tunggal%20abadi&t=&z=17&ie=UTF8&iwloc=&output=embed"></iframe>
                     </div>
                 </div>
             </div>
