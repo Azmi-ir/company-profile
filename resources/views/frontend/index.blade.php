@@ -222,7 +222,7 @@
                     <div class="col-md-12 text-center white">
                         <h2 class="service-title pad-bt15">Kontak Kami</h2>
                         <p class="sub-title pad-bt15">untuk menghubungi kami silahkan menghubungi lewat kontak yang
-                            tertera di bawah<br>atau kirim pesan dengan email.</p>
+                            tertera di bawah.</p>
                         <hr class="bottom-line white-bg">
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
@@ -237,46 +237,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="contact-form">
-                            <form action="/kirim-pesan" method="POST" role="form" class="contactForm">
-                                @csrf
-                                <div class="col-md-6 padding-right-zero">
-                                    <div class="form-group">
-                                        <input type="text" name="nama" class="form-control" id="name"
-                                            placeholder="Nama Anda" data-rule="minlen:4"
-                                            data-msg="Please enter at least 4 chars" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" name="email" id="email"
-                                            placeholder="Email Anda" data-rule="email"
-                                            data-msg="Please enter a valid email" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" name="subjek" id="subject"
-                                            placeholder="Subjek Email" data-rule="minlen:4"
-                                            data-msg="Please enter at least 8 chars of subject" />
-                                        <div class="validation"></div>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="status" value="0">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <textarea class="form-control" name="pesan" rows="5" data-rule="required"
-                                            data-msg="Please write something for us"
-                                            placeholder="Masukan Pesan anda..."></textarea>
-                                        <div class="validation"></div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-submit">KIRIM</button>
-                                </div>
-                            </form>
-
-                        </div>
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=PT%20dwimitra%20tunggal%20abadi&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:600px;}</style><a href="https://www.embedgooglemap.net">html embed google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:600px;}</style></div></div>
                     </div>
                 </div>
             </div>
