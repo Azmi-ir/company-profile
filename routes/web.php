@@ -65,12 +65,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::patch('/admin/user/updatepassword', [AuthController::class, 'passwordUpdate']);
     Route::get('/admin/list-user', [AuthController::class, 'list_user']);
     //pesan masuk
-    Route::get('/admin/pesan-masuk', [PesanController::class, 'index']);
-    Route::get('/admin/lihat-pesan/{detail_pesan}', [PesanController::class, 'lihatPesan']);
-    Route::get('/admin/balas-pesan/{detail_pesan}', [PesanController::class, 'balasPesan']);
-    Route::get('/admin/kirim-balasan/{detail_pesan}', [PesanController::class, 'kirimBalasan']);
-    Route::delete('/admin/hapus-pesan/{detail_pesan}', [PesanController::class, 'destroy']);
-    Route::post('/admin/ubah-pesan/{detail_pesan}', [PesanController::class, 'update']);
+    //Route::get('/admin/pesan-masuk', [PesanController::class, 'index']);
+    //Route::get('/admin/lihat-pesan/{detail_pesan}', [PesanController::class, 'lihatPesan']);
+    //Route::get('/admin/balas-pesan/{detail_pesan}', [PesanController::class, 'balasPesan']);
+    //Route::get('/admin/kirim-balasan/{detail_pesan}', [PesanController::class, 'kirimBalasan']);
+    //Route::delete('/admin/hapus-pesan/{detail_pesan}', [PesanController::class, 'destroy']);
+    //Route::post('/admin/ubah-pesan/{detail_pesan}', [PesanController::class, 'update']);
     //register
     Route::get('/admin/register', [AuthController::class, 'register']);
     Route::post('/postregister', [AuthController::class, 'postregister']);
