@@ -61,12 +61,12 @@
                   <td>
                     
                     <a class="btn btn-info btn-sm" href="/admin/portofolio/{{ $item->id }}/edit">
-                      <i class="fas fa-pencil-alt"></i>
+                      <i class="fas fa-pencil-alt"></i> Edit
                     </a>
                     <form action="/admin/portofolio/{{ $item->id }}" method="post" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus data?')">
                       @method('delete')
                       @csrf
-                      <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                      <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Hapus</button>
                     </form>
                   </td>
                 </tr>

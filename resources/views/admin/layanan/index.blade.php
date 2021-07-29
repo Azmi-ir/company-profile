@@ -60,12 +60,12 @@
                       @endif</td>
                     <td>
                           <a class="btn btn-info btn-sm" href="layanan/{{ $item->id }}/edit">
-                              <i class="fas fa-pencil-alt"></i>
+                              <i class="fas fa-pencil-alt"></i> Edit
                           </a>
                           <form action="/admin/layanan/{{ $item->id }}" method="post" class="d-inline" onsubmit="return confirm('Yakin ingin menghapus data?')">
                         @method('delete')
                         @csrf
-                        <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></button>
+                        <button type="submit" class="btn btn-danger btn-sm"><i class="fas fa-trash"></i> Hapus</button>
                         </form>
                     </td>
                   </tr>
