@@ -90,7 +90,7 @@
             <br>
             <div class="mb-2">
               <button type="submit" class="btn btn-info">Simpan</button>
-              <a href="/admin/portofolio" class="btn btn-success ml-1">Kembali</a><br>
+              <a href="/admin/staff" class="btn btn-success ml-1">Kembali</a><br>
             </div>
           </form>
 

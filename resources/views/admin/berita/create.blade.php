@@ -88,7 +88,7 @@
             <br>
             <div class="mb-2">
               <button type="submit" class="btn btn-info">Buat Berita</button>
-              <a href="/berita" class="btn btn-success ml-1">Kembali</a><br>
+              <a href="/admin/berita" class="btn btn-success ml-1">Kembali</a><br>
             </div>
           </form>
 

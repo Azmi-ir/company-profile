@@ -89,7 +89,7 @@
               <br>
               <div class="mb-2">
                 <button type="submit" class="btn btn-info">Tambah Data</button>
-                <a href="/layanan" class="btn btn-success ml-1">Kembali</a><br>
+                <a href="/admin/layanan" class="btn btn-success ml-1">Kembali</a><br>
               </div>            
             </form>
 
